@@ -9,9 +9,23 @@ Tato část se věnuje tomu, jak data ze STAGu načíst strojově.
 
 ### Instalace balíčků
 
-```bash
-pip install requests pandas
-```
+=== "pip"
+
+    ```bash
+    pip install requests pandas
+    ```
+
+=== "Poetry"
+
+    ```bash
+    poetry add requests pandas
+    ```
+
+=== "R"
+
+    ```r
+    install.packages(c("httr", "readr"))
+    ```
 
 #### Pandas
 
