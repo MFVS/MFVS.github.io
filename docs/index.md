@@ -1,6 +1,10 @@
-# Welcome to MkDocs
+# STAG projekty
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Tato dokumentace slouží k popisu aplikací vytvořených nad STAGem.
+Součástí je i návod, jak takové aplikace vytvářet.
+
+- využívání webových služeb STAGu
+- přihlašování do aplikací pomocí STAG účtu
 
 ## Commands
 

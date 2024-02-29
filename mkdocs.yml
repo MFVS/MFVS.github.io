@@ -2,3 +2,7 @@ site_name: STAG docs
 
 theme:
   name: material
+  palette:
+    primary: blue-grey
+    accent: deep orange
+  logo: assets/ujep-logo.png
