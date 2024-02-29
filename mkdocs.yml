@@ -21,7 +21,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 nav:
   - Úvod: index.md
   - Jak používat webové služby: ws-guide.md
+  - Projekty: projects.md
