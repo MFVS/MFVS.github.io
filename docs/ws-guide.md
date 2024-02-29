@@ -58,7 +58,7 @@ Pandas je knihovna pro práci s daty. Umožňuje načítat data z různých zdro
         query = params
     )
 
-    df <- read_csv(rawToChar(data$content))
+    df <- read_csv2(rawToChar(data$content))
     ```
 
 #### Request `/getPredmetInfo`
@@ -121,5 +121,5 @@ Request na tuto službu by vypadal následovně:
         query = params
     )
 
-    df <- read_csv(rawToChar(data$content))
+    df <- read_csv2(rawToChar(data$content))
     ```

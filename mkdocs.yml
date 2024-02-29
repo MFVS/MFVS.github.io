@@ -16,7 +16,6 @@ theme:
       primary: blue-grey
       accent: deep-orange
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
@@ -24,7 +23,7 @@ theme:
         name: Switch to light mode
       primary: blue-grey
       accent: deep-orange
-  logo: assets/ujep-logo.png
+  logo: assets/prf_logo.svg
 
 markdown_extensions:
   - pymdownx.highlight:
