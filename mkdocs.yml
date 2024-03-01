@@ -1,10 +1,28 @@
-site_name: STAG dokumentace
+site_name: STAG Projekty — Návody a dokumentace
 repo_url: https://github.com/mfvs
 repo_name: MFVS/org
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 theme:
+  features:
+      - navigation.tabs
   icon:
-    repo: fontawesome/brands/github-alt
+    repo: fontawesome/brands/github
   favicon: images/favicon.png
   name: material
   palette:
@@ -23,22 +41,24 @@ theme:
         name: Switch to light mode
       primary: blue-grey
       accent: deep-orange
-  logo: assets/prf_logo.svg
+  logo: assets/ujep_logo.png
 
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
 
 nav:
-  - Úvod: index.md
-  - Webové služby STAG: ws-guide.md
-  - Projekty: projects.md
+  - Popis: index.md
+  - Návody:
+      - Úvod: guide/index.md
+      - Webové služby STAG: guide/ws.md
+  - Projekty:
+      - Úvod: projects/index.md
+      - Erasmus: projects/erasmus.md
+      - Výkazy: projects/vykazy.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/yoptohlejepeta
+      name: yoptohlejepeta
+    - icon: fontawesome/brands/discord
+      link: https://discordapp.com/users/267984510166106113
+      name: El Pedro

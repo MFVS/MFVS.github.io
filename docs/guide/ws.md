@@ -1,6 +1,6 @@
 # Webové služby STAG
 
-Tato část se věnuje tomu, jak data ze STAGu načíst strojově.
+Tato část se věnuje tomu, jak lze data ze STAGu načíst.
 
 - [Odkaz na WS](https://ws.ujep.cz/ws/web)
 - [Dokumentace](https://is-stag.zcu.cz/napoveda/web-services/ws_ws.html)
@@ -9,31 +9,52 @@ Tato část se věnuje tomu, jak data ze STAGu načíst strojově.
 
 ### Instalace balíčků
 
+Stažení nástrojů pro posílání http requestů a případně zpracování dat.
+
 === "pip"
 
     ```bash
     pip install requests pandas
     ```
+    Pandas slouží jako nástroj pro práci s daty. Umožňuje načítat data z různých zdrojů, jako jsou například CSV nebo JSON. Dále umožňuje manipulaci s daty, jako je filtrování, agregace, nebo spojování.
+
+    - [Dokumentace](https://pandas.pydata.org/docs/)
+
+    Requests je knihovna pro posílání http requestů.
+
+    - [Dokumentace](https://docs.python-requests.org/en/master/)
 
 === "Poetry"
 
     ```bash
     poetry add requests pandas
     ```
+    Pandas slouží jako nástroj pro práci s daty. Umožňuje načítat data z různých zdrojů, jako jsou například CSV nebo JSON. Dále umožňuje manipulaci s daty, jako je filtrování, agregace, nebo spojování.
+
+    - [Dokumentace](https://pandas.pydata.org/docs/)
+
+    Requests je knihovna pro posílání http requestů.
+
+    - [Dokumentace](https://docs.python-requests.org/en/master/)
 
 === "R"
 
     ```r
     install.packages(c("httr", "readr"))
     ```
+    Jazyk R nepotřebuje žádný další balíček pro práci s daty.
 
-#### Pandas
+    Knihovna `httr` slouží k posílání http requestů.
 
-Pandas je knihovna pro práci s daty. Umožňuje načítat data z různých zdrojů, jako jsou CSV nebo JSON. Dále umožňuje manipulaci s daty, jako je filtrování, agregace, nebo spojování.
+    - [Dokumentace](https://cran.r-project.org/web/packages/httr/index.html)
 
-- [Dokumentace](https://pandas.pydata.org/docs/)
+    Readr slouží k načítání dat z různých zdrojů, jako jsou například CSV nebo JSON.
 
-### Request na webové služby
+    - [Dokumentace](https://readr.tidyverse.org/)
+
+Více o http requestech [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+
+### Requesty na webové služby
 
 === "Python"
     ```python
