@@ -21,6 +21,7 @@ markdown_extensions:
 theme:
   features:
       - navigation.tabs
+      - content.code.copy
   icon:
     repo: fontawesome/brands/github
   favicon: images/favicon.png
