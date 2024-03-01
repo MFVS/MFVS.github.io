@@ -16,5 +16,3 @@ Dokumentace je primárně zaměřena na jazyk Python, ale v některých částec
 Pro vývoj aplikací je používána knihovna [Streamlit](https://streamlit.io/){ data-preview }.
 
 Zpracoání dat je prováděno pomocí knihovny [Pandas](https://pandas.pydata.org/).
-
-[Attribute Lists](http://localhost:8000/){ data-preview }
