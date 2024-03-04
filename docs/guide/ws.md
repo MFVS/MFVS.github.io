@@ -104,13 +104,13 @@ K odeslání requestu je potřeba znát __url__ služby a __url parametry__ (tak
 
 Na ukázku jeden konkrétní příklad. [`/predmety/getPredmetInfo`](https://ws.ujep.cz/ws/form/predmety/getPredmetInfo)
 
-Výše uvedený odkaz otevře rozhraní služby `/predmety/getPredmetInfo`. K vyplnění je zde několik **parametrů**. Červenou hvězdičkou jsou označeny povinné parametry. Bez těchto **parametrů** nelze request odeslat (resp. server vrátí status kód `500 - Internal Server Error`).
+Výše uvedený odkaz otevře rozhraní služby `/predmety/getPredmetInfo`. K vyplnění je zde několik __parametrů__. Červenou hvězdičkou jsou označeny povinné parametry. Bez těchto __parametrů__ nelze request odeslat (resp. server vrátí status kód `500 - Internal Server Error`).
 
-Služba s vyplněnými **parametry** vypadá následovně:
+Služba s vyplněnými __parametry__ vypadá následovně:
 
 ![ws example](assets/ws/ws-example.png){ align=left }
 
-Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě konkrétního souboru ke stažení nás hlavně zajímá **Adresa**. Z té vyčteme **url** a názvy jednotlivých **parametrů**.
+Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě konkrétního souboru ke stažení nás hlavně zajímá __Adresa__. Z té vyčteme __url__ a názvy jednotlivých __parametrů__.
 
 ![ws output example](assets/ws/ws-output-example.png){ align=left }
 
@@ -134,7 +134,7 @@ Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě ko
 
     </center>
 
-Po doplnění správné **url** a **parametrů** by request na tuto službu vypadal následovně:
+Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypadal následovně:
 
 === "Python"
 
@@ -187,7 +187,7 @@ Po doplnění správné **url** a **parametrů** by request na tuto službu vypa
     ```
 
 ???+ warning "Encoding"
-    Soubory ve formátu **CSV** webové služby defaultně vrací v kódování **windows-1250**. Pro správné načtení dat je potřeba přidat parametr `outputFormatEncoding=utf-8`.
+    Soubory ve formátu __CSV__ webové služby defaultně vrací v kódování __windows-1250__. Pro správné načtení dat je potřeba přidat parametr `outputFormatEncoding=utf-8`.
     [Dokumentace](https://is-stag.zcu.cz/napoveda/web-services/ws_formaty.html)
 
 ### Request s přihlášením
