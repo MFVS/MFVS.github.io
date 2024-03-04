@@ -1,11 +1,11 @@
-# Webové služby STAG
+# __Webové služby STAG__
 
 Tato část se věnuje tomu, jak lze data ze STAGu načíst.
 
 - [Odkaz na WS](https://ws.ujep.cz/ws/web)
 - [Dokumentace](https://is-stag.zcu.cz/napoveda/web-services/ws_ws.html)
 
-## Instalace balíčků
+## Instalace knihoven
 
 Stažení nástrojů pro posílání http requestů a případně zpracování dat.
 
@@ -40,13 +40,13 @@ Stažení nástrojů pro posílání http requestů a případně zpracování d
     ```r
     install.packages(c("httr", "readr"))
     ```
-    Jazyk R nepotřebuje žádný další balíček pro práci s daty.
+    Jazyk R nepotřebuje žádnou další knihovnu pro práci s daty.
 
     Knihovna `httr` slouží k posílání http requestů.
 
     - [Dokumentace](https://cran.r-project.org/web/packages/httr/index.html)
 
-    Readr slouží k načítání dat z různých zdrojů, jako jsou například CSV nebo JSON.
+    Readr slouží k načítání dat formátu například CSV nebo JSON.
 
     - [Dokumentace](https://readr.tidyverse.org/)
 
@@ -98,7 +98,7 @@ Template pro request na webové služby.
     df <- read_csv2(rawToChar(data$content))
     ```
 
-K odeslání requestu je potřeba znát **url** služby a **url parametry** (také jako **query parametry**, dále jen **parametry**), které služba vyžaduje.
+K odeslání requestu je potřeba znát __url__ služby a __url parametry__ (také jako __query parametry__, dále jen __parametry__), které služba vyžaduje.
 
 #### Request `/predmety/getPredmetInfo`
 
@@ -114,7 +114,7 @@ Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě ko
 
 ![ws output example](assets/ws/ws-output-example.png){ align=left }
 
-??? note "Url a parametry"
+??? note "Url parametry"
     Parametry a jejch hodnoty se v adrese nacházejí za otazníkem.
     V našem případě vypadá takto:
 

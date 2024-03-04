@@ -1,4 +1,4 @@
-site_name: STAG Projekty — Návody a dokumentace
+site_name: STAG - Návody a dokumentace
 repo_url: https://github.com/mfvs
 repo_name: MFVS/org
 
@@ -28,7 +28,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
     annotation: material/arrow-right-circle 
-  favicon: assets/favicon.svg
+  favicon: assets/none.svg
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -69,6 +69,3 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/yoptohlejepeta
       name: yoptohlejepeta
-    - icon: fontawesome/brands/discord
-      link: https://discordapp.com/users/267984510166106113
-      name: El Pedro
