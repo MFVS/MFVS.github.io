@@ -123,6 +123,7 @@ Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě ko
     Jednotlivé parametry a jejich hodnoty jsou ve formátu `parametr=hodnota`. Mezi jednotlivými parametry je oddělovač `&`. Naše parametry v tomto případě jsou:
 
     <center>
+
     | Parametr | Hodnota |
     | :-------- | :------- |
     | katedra  | KMA     |
@@ -130,6 +131,7 @@ Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě ko
     | rok      | 2023    |
     | lang     | cs      |
     | outputFormat | CSV |
+
     </center>
 
 Po doplnění správné **url** a **parametrů** by request na tuto službu vypadal následovně:
