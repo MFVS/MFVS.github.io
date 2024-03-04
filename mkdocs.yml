@@ -3,6 +3,8 @@ repo_url: https://github.com/mfvs
 repo_name: MFVS/org
 
 markdown_extensions:
+  - toc:
+      title: Obsah
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -25,6 +27,7 @@ theme:
       - navigation.tabs
       - content.code.copy
       - content.code.annotate
+      - navigation.top
   icon:
     repo: fontawesome/brands/github
     annotation: material/arrow-right-circle 

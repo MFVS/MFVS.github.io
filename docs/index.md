@@ -30,7 +30,7 @@ Cílem je vytvořit návod (nejen) pro studenty, kteří chtějí pracovat s dat
     [:octicons-arrow-right-24: Projekty](projects/index.md)
 
 </div>
-## Technologie
+## Použité technologie
 
 Dokumentace je primárně zaměřena na jazyk Python, ale v některých částech se vyskytují i ukázky kódu v jazyce R.
 
