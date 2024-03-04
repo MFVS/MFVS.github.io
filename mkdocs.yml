@@ -28,7 +28,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
     annotation: material/arrow-right-circle 
-  favicon: images/favicon.png
+  favicon: assets/favicon.svg
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -46,7 +46,7 @@ theme:
         name: Switch to light mode
       primary: blue-grey
       accent: deep-orange
-  logo: assets/ujep_logo.png
+  logo: assets/ujep_logo.svg
 
 plugins:
   - search # search plugin musi byt specifikova. glightbox vypina

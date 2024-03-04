@@ -5,9 +5,11 @@ hide:
 
 # STAG projekty
 
+[![ujep_logo](assets/ujep_logo.svg)](https://www.ujep.cz/cs/)
+
 Tato dokumentace vzníká v rámci předmětu KMA/PS1 — PS4.
 
-Cílem je vytvořit návod pro studenty, kteří chtějí pracovat s daty poskytovanými webovými službami STAGu a využívat je ve vytváření webových aplikací.
+Cílem je vytvořit návod (nejen) pro studenty, kteří chtějí pracovat s daty poskytovanými webovými službami STAGu a využívat je k vytváření webových aplikací.
 
 ## Technologie
 
@@ -15,4 +17,4 @@ Dokumentace je primárně zaměřena na jazyk Python, ale v některých částec
 
 Pro vývoj aplikací je používána knihovna [Streamlit](https://streamlit.io/){ data-preview }.
 
-Zpracoání dat je prováděno pomocí knihovny [Pandas](https://pandas.pydata.org/).
+Zpracování dat pomocí knihovny [Pandas](https://pandas.pydata.org/docs/).
