@@ -14,6 +14,8 @@ markdown_extensions:
       alternate_style: true
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -22,8 +24,10 @@ theme:
   features:
       - navigation.tabs
       - content.code.copy
+      - content.code.annotate
   icon:
     repo: fontawesome/brands/github
+    annotation: material/arrow-right-circle 
   favicon: images/favicon.png
   name: material
   palette:
@@ -44,12 +48,17 @@ theme:
       accent: deep-orange
   logo: assets/ujep_logo.png
 
+plugins:
+  - search # search plugin musi byt specifikova. glightbox vypina
+  - glightbox
+
 
 nav:
   - Popis: index.md
   - Návody:
       - Úvod: guide/index.md
       - Webové služby STAG: guide/ws.md
+      - Aplikace — přihlašování přes STAG: guide/login.md
   - Projekty:
       - Úvod: projects/index.md
       - Erasmus: projects/erasmus.md

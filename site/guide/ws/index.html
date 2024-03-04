@@ -12,7 +12,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../projects/">
+        <link rel="next" href="../login/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -30,6 +30,12 @@
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6v2Z"/></svg>');}</style>
 
 
     
@@ -53,7 +59,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -443,16 +458,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#instalace-balicku" class="md-nav__link">
     <span class="md-ellipsis">
       Instalace balíčků
@@ -460,21 +465,31 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#requesty-na-webove-sluzby" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#request-na-webove-sluzby" class="md-nav__link">
     <span class="md-ellipsis">
-      Requesty na webové služby
+      Request na webové služby
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Requesty na webové služby">
+    <nav class="md-nav" aria-label="Request na webové služby">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#request-getpredmetinfo" class="md-nav__link">
+  <a href="#request-bez-prihlaseni" class="md-nav__link">
     <span class="md-ellipsis">
-      Request /getPredmetInfo
+      Request bez přihlášení
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request bez přihlášení">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-predmetygetpredmetinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request /predmety/getPredmetInfo
     </span>
   </a>
   
@@ -482,6 +497,15 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-s-prihlasenim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request s přihlášením
+    </span>
+  </a>
   
 </li>
         
@@ -494,6 +518,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../login/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplikace — přihlašování přes STAG
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -641,16 +686,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Python">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#instalace-balicku" class="md-nav__link">
     <span class="md-ellipsis">
       Instalace balíčků
@@ -658,21 +693,31 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#requesty-na-webove-sluzby" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#request-na-webove-sluzby" class="md-nav__link">
     <span class="md-ellipsis">
-      Requesty na webové služby
+      Request na webové služby
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Requesty na webové služby">
+    <nav class="md-nav" aria-label="Request na webové služby">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#request-getpredmetinfo" class="md-nav__link">
+  <a href="#request-bez-prihlaseni" class="md-nav__link">
     <span class="md-ellipsis">
-      Request /getPredmetInfo
+      Request bez přihlášení
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request bez přihlášení">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-predmetygetpredmetinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request /predmety/getPredmetInfo
     </span>
   </a>
   
@@ -680,6 +725,15 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-s-prihlasenim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request s přihlášením
+    </span>
+  </a>
   
 </li>
         
@@ -712,8 +766,7 @@
 <li><a href="https://ws.ujep.cz/ws/web">Odkaz na WS</a></li>
 <li><a href="https://is-stag.zcu.cz/napoveda/web-services/ws_ws.html">Dokumentace</a></li>
 </ul>
-<h2 id="python">Python</h2>
-<h3 id="instalace-balicku">Instalace balíčků</h3>
+<h2 id="instalace-balicku">Instalace balíčků</h2>
 <p>Stažení nástrojů pro posílání http requestů a případně zpracování dat.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip</label><label for="__tabbed_1_2">Poetry</label><label for="__tabbed_1_3">R</label></div>
 <div class="tabbed-content">
@@ -756,28 +809,29 @@ Jazyk R nepotřebuje žádný další balíček pro práci s daty.</p>
 </div>
 </div>
 </div>
-<p>Více o http requestech <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">zde</a></p>
-<h3 id="requesty-na-webove-sluzby">Requesty na webové služby</h3>
+<p>Více o http requestech <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">zde</a>.</p>
+<h2 id="request-na-webove-sluzby">Request na webové služby</h2>
+<h3 id="request-bez-prihlaseni">Request bez přihlášení</h3>
+<p>Template pro request na webové služby.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python</label><label for="__tabbed_2_2">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://ws.ujep.cz/ws/services/rest2/test/endpoint&quot;</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="s2">&quot;lang&quot;</span><span class="p">:</span> <span class="s2">&quot;cs&quot;</span><span class="p">,</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="s2">&quot;outputFormat&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="s2">&quot;outputFormatEncoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">url</span><span class="p">,</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">)</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">text</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="s2">&quot;outputFormat&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="s2">&quot;outputFormatEncoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">url</span><span class="p">,</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">text</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -786,37 +840,51 @@ Jazyk R nepotřebuje žádný další balíček pro práci s daty.</p>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://ws.ujep.cz/ws/services/rest2/test/endpoint&quot;</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">params</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="n">lang</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;cs&quot;</span><span class="p">,</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">outputFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CSV&quot;</span><span class="p">,</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="n">outputFormatEncoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;utf-8&quot;</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="n">url</span><span class="p">,</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">)</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv2</span><span class="p">(</span><span class="nf">rawToChar</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">content</span><span class="p">))</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="n">outputFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CSV&quot;</span><span class="p">,</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">outputFormatEncoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;utf-8&quot;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">)</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">url</span><span class="p">,</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">)</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv2</span><span class="p">(</span><span class="nf">rawToChar</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">content</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
-<h4 id="request-getpredmetinfo">Request <code>/getPredmetInfo</code></h4>
-<figure>
-  <img align="left" alt="ws example" src="../assets/ws/ws-example.png" />
-  <figcaption>Náhled spouštění WS</figcaption>
-</figure>
-<figure>
-  <img align="left" alt="ws output example" src="../assets/ws/ws-output-example.png" />
-  <figcaption>Náhled výstupu WS</figcaption>
-</figure>
-<p>Request na tuto službu by vypadal následovně:</p>
+<p>K odeslání requestu je potřeba znát <strong>url</strong> služby a <strong>url parametry</strong> (také jako <strong>query parametry</strong>, dále jen <strong>parametry</strong>), které služba vyžaduje.</p>
+<h4 id="request-predmetygetpredmetinfo">Request <code>/predmety/getPredmetInfo</code></h4>
+<p>Na ukázku jeden konkrétní příklad. <a href="https://ws.ujep.cz/ws/form/predmety/getPredmetInfo"><code>/predmety/getPredmetInfo</code></a></p>
+<p>Výše uvedený odkaz otevře rozhraní služby <code>/predmety/getPredmetInfo</code>. K vyplnění je zde několik <strong>parametrů</strong>. Červenou hvězdičkou jsou označeny povinné parametry. Bez těchto <strong>parametrů</strong> nelze request odeslat (resp. server vrátí status kód <code>500 - Internal Server Error</code>).</p>
+<p>Služba s vyplněnými <strong>parametry</strong> vypadá následovně:</p>
+<p><a class="glightbox" href="../assets/ws/ws-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="ws example" src="../assets/ws/ws-example.png" /></a></p>
+<p>Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě konkrétního souboru ke stažení nás hlavně zajímá <strong>Adresa</strong>. Z té vyčteme <strong>url</strong> a názvy jednotlivých <strong>parametrů</strong>.</p>
+<p><a class="glightbox" href="../assets/ws/ws-output-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="ws output example" src="../assets/ws/ws-output-example.png" /></a></p>
+<details class="note">
+<summary>Url a parametry</summary>
+<p>Parametry a jejch hodnoty se v adrese nacházejí za otazníkem.
+V našem případě vypadá takto:</p>
+<p><code>?katedra=KMA&amp;zkratka=MA2&amp;rok=2023&amp;lang=cs&amp;outputFormat=CSV&amp;outputFormatEncoding=utf-8</code>.</p>
+<p>Jednotlivé parametry a jejich hodnoty jsou ve formátu <code>parametr=hodnota</code>. Mezi jednotlivými parametry je oddělovač <code>&amp;</code>. Naše parametry v tomto případě jsou:</p>
+<p><center>
+| Parametr | Hodnota |
+| :-------- | :------- |
+| katedra  | KMA     |
+| zkratka  | MA2     |
+| rok      | 2023    |
+| lang     | cs      |
+| outputFormat | CSV |
+</center></p>
+</details>
+<p>Po doplnění správné <strong>url</strong> a <strong>parametrů</strong> by request na tuto službu vypadal následovně:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Python</label><label for="__tabbed_3_2">R</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://ws.ujep.cz/ws/services/rest2/predmety/getPredmetInfo&quot;</span>
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
@@ -858,6 +926,60 @@ Jazyk R nepotřebuje žádný další balíček pro práci s daty.</p>
 </span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="p">)</span>
 </span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
 </span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv2</span><span class="p">(</span><span class="nf">rawToChar</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">content</span><span class="p">))</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<details class="warning" open="open">
+<summary>Encoding</summary>
+<p>Soubory ve formátu <strong>CSV</strong> webové služby defaultně vrací v kódování <strong>windows-1250</strong>. Pro správné načtení dat je potřeba přidat parametr <code>outputFormatEncoding=utf-8</code>.
+<a href="https://is-stag.zcu.cz/napoveda/web-services/ws_formaty.html">Dokumentace</a></p>
+</details>
+<h3 id="request-s-prihlasenim">Request s přihlášením</h3>
+<p><a class="glightbox" href="../assets/ws/ws-ticket.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="ws ticket" src="../assets/ws/ws-ticket.png" /></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Python</label><label for="__tabbed_4_2">R</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">requests</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://ws.ujep.cz/ws/services/rest2/kvalifikacniprace/getKvalifikacniPraceAuth&quot;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">ticket</span> <span class="o">=</span> <span class="s2">&quot;your_ticket&quot;</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="s2">&quot;katedra&quot;</span><span class="p">:</span> <span class="s2">&quot;KI&quot;</span><span class="p">,</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="s2">&quot;outputFormat&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="s2">&quot;outputFormatEncoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="p">}</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cookies</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;WSCOOKIE&quot;</span><span class="p">:</span> <span class="n">ticket</span><span class="p">})</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">text</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-r highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nf">library</span><span class="p">(</span><span class="n">readr</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://ws.ujep.cz/ws/services/rest2/kvalifikacniprace/getKvalifikacniPraceAuth&quot;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">ticket</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;your_ticket&quot;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">params</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="s">&quot;katedra&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;KI&quot;</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="s">&quot;outputFormat&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CSV&quot;</span><span class="p">,</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="s">&quot;outputFormatEncoding&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;utf-8&quot;</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="p">)</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="n">url</span><span class="p">,</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">    </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">,</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="nf">add_headers</span><span class="p">(</span><span class="s">&quot;Cookie&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;WSCOOKIE&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ticket</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;=&quot;</span><span class="p">))</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="p">)</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv2</span><span class="p">(</span><span class="nf">rawToChar</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">content</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -928,11 +1050,11 @@ Jazyk R nepotřebuje žádný další balíček pro práci s daty.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
