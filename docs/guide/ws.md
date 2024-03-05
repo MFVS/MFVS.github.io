@@ -192,6 +192,8 @@ Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypa
 
 ### Request s přihlášením
 
+++f12++
+
 ![ws ticket](assets/ws/ws-ticket.png){ align=left }
 
 === "Python"
