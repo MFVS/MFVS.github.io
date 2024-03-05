@@ -35,7 +35,7 @@ Stažení nástrojů pro posílání http requestů a případně zpracování d
 
     - [Dokumentace](https://docs.python-requests.org/en/master/)
 
-=== "R"
+=== "<span style="color:#276DC3">:fontawesome-brands-r-project:</span>"
 
     ```r
     install.packages(c("httr", "readr"))
@@ -58,7 +58,7 @@ Více o http requestech [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/
 
 Template pro request na webové služby.
 
-=== "Python"
+=== "<span style='color:#306998'>:fontawesome-brands-python: Python</span>"
 
     ```python
     import requests
@@ -78,7 +78,7 @@ Template pro request na webové služby.
 
     df = pd.read_csv(StringIO(data.text), sep=";")
     ```
-=== "R"
+=== "<span style="color:#276DC3">:fontawesome-brands-r-project:</span>"
 
     ```r
     library(httr)
@@ -136,7 +136,7 @@ Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě ko
 
 Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypadal následovně:
 
-=== "Python"
+=== "<span style='color:#306998'>:fontawesome-brands-python: Python</span>"
 
     ```python
     import requests
@@ -161,7 +161,7 @@ Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypa
 
     df = pd.read_csv(StringIO(data.text), sep=";")
     ```
-=== "R"
+=== "<span style="color:#276DC3">:fontawesome-brands-r-project:</span>"
 
     ```r
     library(httr)
@@ -196,7 +196,7 @@ Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypa
 
 ![ws ticket](assets/ws/ws-ticket.png){ align=left }
 
-=== "Python"
+=== "<span style='color:#306998'>:fontawesome-brands-python: Python</span>"
 
     ```python
     import requests
@@ -218,7 +218,7 @@ Po doplnění správné __url__ a __parametrů__ by request na tuto službu vypa
     df = pd.read_csv(StringIO(data.text), sep=";")
     ```
 
-=== "R"
+=== "<span style="color:#276DC3">:fontawesome-brands-r-project:</span>"
 
     ```r
     library(httr)
