@@ -1,1 +1,1 @@
-# :fontawesome-solid-diagram-project:{ .lg .middle } __Úvod__
+# __Úvod__

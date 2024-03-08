@@ -29,9 +29,10 @@ theme:
       - content.code.copy
       - content.code.annotate
       - navigation.top
+      - navigation.indexes
+      - navigation.expand
   icon:
     repo: fontawesome/brands/github
-    annotation: material/arrow-right-circle 
   favicon: assets/none.svg
   name: material
   palette:
@@ -60,11 +61,13 @@ plugins:
 nav:
   - Popis: index.md
   - Návody:
-      - Úvod: guide/index.md
-      - Webové služby STAG: guide/ws.md
+      - guide/index.md
+      - Webové služby STAG: 
+        - Request bez přihlášení: guide/ws/requests_nolog.md
+        - Request s přihlášením: guide/ws/requests_log.md
       - Aplikace — přihlašování přes STAG: guide/login.md
   - Projekty:
-      - Úvod: projects/index.md
+      - projects/index.md
       - Erasmus: projects/erasmus.md
       - Výkazy: projects/vykazy.md
 
