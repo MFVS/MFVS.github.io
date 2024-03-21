@@ -32,6 +32,9 @@ Cílem je vytvořit návod (nejen) pro studenty, kteří chtějí pracovat s dat
 </div>
 ## Použité technologie
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
+
 Dokumentace je primárně zaměřena na jazyk Python, ale v některých částech se vyskytují i ukázky kódu v jazyce R.
 
 Pro vývoj aplikací je používána knihovna [Streamlit](https://streamlit.io/){ data-preview }.
