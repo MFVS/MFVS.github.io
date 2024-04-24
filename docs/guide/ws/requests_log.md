@@ -1,10 +1,22 @@
 # __Request s přihlášením__
 
+Abychom mohli získat data, která vyžadují přihlášení, je nutné se autentifikovat.
+
 ## __WS Cookie__
 
-++f12++
+Po příhlašení do WS získáme cookie, která je uložena v prohlížeči. Tuto cookie můžeme použít k autentifikaci v našem kódu.
 
-![ws ticket](assets/ws/ws-ticket.png){ align=left }
+Po stisknutí ++f12++ se nám otevřou [__Developer Tools__](https://developer.mozilla.org/en-US/docs/Glossary/Developer_Tools).
+
+=== "<span style='color:#FF7139'>:fontawesome-brands-firefox:</span>"
+
+    ![ws ticket](assets/ws-ticket-firefox.png){ align=left }
+
+=== "<span>:fontawesome-brands-chrome:</span>"
+
+    ![ws ticket](assets/ws-ticket-chrome.png){ align=left }
+
+Kód pro request s přihlášením vypadá následovně:
 
 === "<span style='color:#306998'>:fontawesome-brands-python: Python</span>"
 
@@ -53,7 +65,7 @@
     df <- read_csv2(rawToChar(data$content))
     ```
 
-## __Přihlašovací údaje do STAGu__
+## __Přihlašovací údaje__
 
 === "<span style='color:#306998'>:fontawesome-brands-python: Python</span>"
 

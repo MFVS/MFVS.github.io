@@ -1,6 +1,6 @@
-# __Přihlašování přes STAG__
+# __Streamlit__
 
-- [Dokumentace](https://is-stag.zcu.cz/napoveda/web-services/ws_prihlasovani.html)
+[![Streamlit](https://img.shields.io/badge/streamlit-white?style=for-the-badge&logo=streamlit)](https://www.streamlit.io/)
 
 ```python
 if "stagUserTicket" not in st.session_state:

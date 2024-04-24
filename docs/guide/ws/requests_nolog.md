@@ -2,7 +2,7 @@
 
 ## __Instalace knihoven__
 
-Stažení nástrojů pro posílání http requestů a případně zpracování dat.
+Stažení knihoven pro posílání http requestů a případně zpracování dat.
 
 === "pip"
 
@@ -99,11 +99,11 @@ Výše uvedený odkaz otevře rozhraní služby `/predmety/getPredmetInfo`. K vy
 
 Služba s vyplněnými __parametry__ vypadá následovně:
 
-![ws example](assets/ws/ws-example.png){ align=left }
+![ws example](assets/ws-example.png){ align=left }
 
 Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě konkrétního souboru ke stažení nás hlavně zajímá __Adresa__. Z té vyčteme __url__ a názvy jednotlivých __parametrů__.
 
-![ws output example](assets/ws/ws-output-example.png){ align=left }
+![ws output example](assets/ws-output-example.png){ align=left }
 
 ??? note "Url parametry"
     Parametry a jejch hodnoty se v adrese nacházejí za otazníkem.

@@ -65,7 +65,11 @@ nav:
       - Webové služby STAG: 
         - Request bez přihlášení: guide/ws/requests_nolog.md
         - Request s přihlášením: guide/ws/requests_log.md
-      - Aplikace — přihlašování přes STAG: guide/login.md
+      - Aplikace:
+        - Přihlašování přes STAG:
+          - Dokumentace: guide/apps/login.md
+          - Streamlit: guide/apps/st_login.md
+          - Shiny: guide/apps/shiny_login.md
   - Projekty:
       - projects/index.md
       - Erasmus: projects/erasmus.md

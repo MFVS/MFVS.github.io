@@ -112,7 +112,7 @@ Služba s vyplněnými __parametry__ vypadá následovně:
 
 Po odeslání requestu se zobrazí výsledek volání webové služby. Kromě konkrétního souboru ke stažení nás hlavně zajímá __Adresa__. Z té vyčteme __url__ a názvy jednotlivých __parametrů__.
 
-![ws output example](assets/ws/ws-output-example.png){ align=left }
+![ws output example](assets/ws-output-example.png){ align=left }
 
 ??? note "Url parametry"
     Parametry a jejch hodnoty se v adrese nacházejí za otazníkem.
