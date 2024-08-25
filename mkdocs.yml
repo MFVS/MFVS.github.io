@@ -41,17 +41,19 @@ theme:
       toggle:
         icon: material/lightbulb
         name: Switch to dark mode
-      primary: blue-grey
-      accent: deep-orange
+      primary: black
+      accent: purple
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
-      primary: blue-grey
-      accent: deep-orange
+      primary: black
+      accent: purple
   logo: assets/ujep_logo.svg
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search # search plugin musi byt specifikova. glightbox vypina
